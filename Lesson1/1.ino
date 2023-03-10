@@ -1,11 +1,21 @@
+//cоздаём переменные
 #define LED 3
+#define LIGHT A0
+int value;
+
 
 void setup()
 {
+    //настройка пинов к которым подключены датчики и исполнительные устройства
     pinMode(LED, OUTPUT);
+    pinMode(LIGHT, INPUT);
 }
 
 void loop()
 {
-    digitalWrite(LED, HIGH);
+    //основной цикл программы
+    //чтение данных с датчика и запись в переменную value
+    value = analogRead(LIGHT);
+    // Проверка необходимых условий и выполнение нужных действий в соответствии с заданием...
+    
 }
