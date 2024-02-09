@@ -5,7 +5,6 @@ int M2_PIN = 10;
 int SPEED = 75;
 
 int sensor;
-
 void setup() 
 {
   // put your setup code here, to run once:
